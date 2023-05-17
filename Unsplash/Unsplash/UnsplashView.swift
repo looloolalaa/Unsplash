@@ -3,11 +3,11 @@ import SDWebImageSwiftUI //pod 'SDWebImageSwiftUI'
 
 struct ContentView: View{
     @State var expand = true
-    @State var search = "Japan" //ex) Japan : 바인딩으로 처리예정
+    @State var search = "Korea" //ex) Japan : 바인딩으로 처리예정
    // @Binding var redisRsult: String
     @ObservedObject var RandomImages = getData()
     @State var page = 1
-    @State var per_page = 1 //보여줄 이미지 개수
+    @State var per_page = 4 //보여줄 이미지 개수
     @State var isSearching = false
     
     var body: some View{
