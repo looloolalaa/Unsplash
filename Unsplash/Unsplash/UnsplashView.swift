@@ -146,7 +146,7 @@ struct ContentView: View{
     
     
     func SearchData(){//사용자에게 입력 받은 값 처리하여 getData에 넘겨줌
-        let key = "kg5CGnLPGSNn0Om49_wt2orc2bVvu6cmwbxl1idQhwM"
+        let key = "Insert your API Key here"
         let query = self.search.replacingOccurrences(of: " ", with: "%20")
         let url = "https://api.unsplash.com/search/photos/?page=\(self.page)&per_page=\(self.per_page)&query=\(query)&client_id=\(key)"
         
